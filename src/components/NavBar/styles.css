@@ -1,0 +1,41 @@
+
+.navStyle{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: blue;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    }
+
+.home {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 25px 25px;
+    text-decoration: none;
+}
+
+.list {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 25px 25px;
+    text-decoration: none;
+}
+
+.list:hover {
+    background-color: rgb(3, 134, 21);
+}
+
+li {
+    text-decoration: none;
+}
