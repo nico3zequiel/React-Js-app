@@ -1,8 +1,14 @@
 import React from 'react'
+import '../components/NavBar/styles.css'
+import CartImage from './images/CartImage.png'
+
+
 
 const CartWidget = (props) => {
-    return (        
-            <button><img src=".images/carrito.png" alt="cart" /></button>       
+    return (     
+        <div>   
+            <button><img src={CartImage} alt="carrito" className="imgSize" /></button>
+            </div>       
         
     )
 }
