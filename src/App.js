@@ -1,9 +1,8 @@
-/* import logo from './logo.svg'; */
 import './App.css';
-import NavBar from './components/NavBar/NavBar';
+import NavBS from './components/NavBar/NavBS';
 import './components/NavBar/styles.css' 
-import CartWidget from './components/CartWidget';
-import ItemListContainer from './components/ItemListContainer'
+import ItemListContainer from './components/ItemListContainer';
+
 
 
 
@@ -11,10 +10,10 @@ import ItemListContainer from './components/ItemListContainer'
 function App() {
   return (
     
-      <>
-      <NavBar/>
-      <CartWidget/>
-      <ItemListContainer saludo="Bienvenido" />
+      <>      
+      <NavBS/>      
+      <ItemListContainer greeting='React Store' />  
+          
 
     </>
   );

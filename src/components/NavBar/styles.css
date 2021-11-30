@@ -1,6 +1,19 @@
 *{
     margin: 0;
     padding: 0;
+    
+}
+
+.fontStyle {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 50px;
+    color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
 
@@ -10,7 +23,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: blue;
+    background-color: rgb(35, 70, 78);
     width: 100%;
     position: fixed;
     top: 0px;
@@ -27,6 +40,7 @@
     text-align: center;
     padding: 25px 25px;
     text-decoration: none;
+    background-color: rgb(35, 70, 78);
 }
 
 .list {
@@ -35,17 +49,66 @@
     text-align: center;
     padding: 25px 25px;
     text-decoration: none;
+    background-color: rgb(35, 70, 78);
 }
 
 .list:hover {
-    background-color: rgb(3, 134, 21);
+    background-color: rgb(3, 134, 95);
 }
 
 li {
     text-decoration: none;
 }
 
-.imgSize {
-    width: 80px;
-    height: 50px;
+.cartStyle{
+    display: flex;
+    text-align: end;
+    font-size: 30px;
+    color: white;
+    overflow: hidden;    
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+
+
+}
+
+
+/* CLASES PARA ItemListContainer e ItemCount */
+
+.titles {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top:90px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 25px;
+    color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.cartButtons {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 17px;
+    color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.incDecButtons {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;    
+    margin-top: 40px;
+    font-size: 17px;
+    color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

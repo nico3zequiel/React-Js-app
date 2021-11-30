@@ -1,22 +1,25 @@
-/* import CartWidget from "../CartWidget"; */
+import React from "react";
+import './styles.css';
 
 const NavBar = () => {
     return (
         
         
-        
-        <ul>    
+        <div>
+        <ul className= "navStyle">    
 
             {/* LINK AL HOME */}        
-            <li><strong>React Store</strong></li> 
+            <li className="list">React Store</li> 
 
             {/* CATEGORIAS */}
             
-            <li>Categoria 1</li> 
-            <li>Categoria 2</li>
-            <li>Categoria 3</li>
-            <li>Categoria 4</li>
+            <li className="list">Categoria 1</li> 
+            <li className="list">Categoria 2</li>
+            <li className="list">Categoria 3</li>
+            <li className="list">Categoria 4</li>
         </ul>
+        
+        </div>
     )
 }   
 

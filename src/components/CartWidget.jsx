@@ -1,13 +1,13 @@
 import React from 'react'
 import '../components/NavBar/styles.css'
-import CartImage from './images/CartImage.png'
+import {ShoppingCartOutlined} from '@ant-design/icons';
 
 
 
 const CartWidget = (props) => {
     return (     
-        <div>   
-            <button><img src={CartImage} alt="carrito" className="imgSize" /></button>
+        <div className='cartStyle'>   
+            <button><ShoppingCartOutlined /></button>
             </div>       
         
     )
