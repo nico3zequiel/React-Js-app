@@ -1,5 +1,10 @@
 import ItemCount from './ItemCount';
 import './NavBar/styles.css';
+import ItemList from './Item';
+
+
+
+
 
 
 const ItemListContainer = ({greeting}) => {
@@ -12,6 +17,7 @@ const ItemListContainer = ({greeting}) => {
         <p>Producto 3</p>
         </div>
         <ItemCount getInitial={1} getStock={10} onAdd={'Cantidad agregada al carrito '}/>
+        <ItemList items={listProduct} />
         </div>
     )
 }
