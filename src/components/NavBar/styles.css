@@ -112,3 +112,8 @@ li {
     color:black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.product {
+    height: 25em;
+    width: 25em;
+}

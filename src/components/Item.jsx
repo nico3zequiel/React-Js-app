@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Item = () => {
+function Item () {
     return new Promise((resolve, reject) => {
         const object =[
             {
