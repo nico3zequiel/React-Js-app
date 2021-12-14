@@ -3,6 +3,7 @@ import NavBS from './components/NavBar/NavBS';
 import './components/NavBar/styles.css' 
 import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 
 
@@ -11,13 +12,17 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 function App() {
   return (
     
-      <>      
-      <NavBS/>      
-      {/* <ItemListContainer greeting='React Store' />   */}
-      <ItemDetailContainer />
-          
-
-    </>
+    <BrowserRouter>      
+    <NavBS/>
+    <Switch>
+      <Route exact path='/'>
+      <ItemListContainer greeting='React Store' />
+      </Route>      
+      <Route exact path='/detail'>
+        <ItemDetailContainer />
+      </Route>
+    </Switch>
+    </BrowserRouter>
   );
 }
 

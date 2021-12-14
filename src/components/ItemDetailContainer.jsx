@@ -14,11 +14,30 @@ export default function ItemDetailContainer () {
             .then(res=>res.json())
             .then(dataJson=>setItem(dataJson))
     }, []);
+    
+    useEffect ( () => {
+        fetch('https://fakestoreapi.com/products/2')
+            .then(res=>res.json())
+            .then(dataJson=>setItem(dataJson))
+    }, []);
+
+    useEffect ( () => {
+        fetch('https://fakestoreapi.com/products/3')
+            .then(res=>res.json())
+            .then(dataJson=>setItem(dataJson))
+    }, []);
+
+    useEffect ( () => {
+        fetch('https://fakestoreapi.com/products/4')
+            .then(res=>res.json())
+            .then(dataJson=>setItem(dataJson))
+    }, []);
+
 
 
     return (
         <div>
-            <h1>Item Detail Container</h1>
+            <h1 className='container-fluid'>Detalle del producto</h1>
             {
                 item?
                 <ItemDetail product={item} />
